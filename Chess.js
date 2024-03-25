@@ -349,20 +349,19 @@ document.addEventListener("DOMContentLoaded", function() {
   var currentPieceElement = document.getElementById('currentpiece');
 
   pieces.forEach(piece => {
-    // Add event listener for mouse enter
+ 
     piece.addEventListener('mouseenter', function() {
-      // Get the ID of the piece container div
+
       var tooltipText = this.id;
 
-      // Set the text content of the current piece element
+  
       currentPieceElement.textContent = tooltipText;
     });
 
-    // Add event listener for mouse leave
+    
     piece.addEventListener('mouseleave', function() {
-      // Clear the text content of the current piece element
+      
       currentPieceElement.textContent = '';
     });
   });
 });
-
